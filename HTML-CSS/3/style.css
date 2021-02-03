@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    width: 100%;
+    height: 100vh;
+}
+
+input {
+    outline-style: none;
+    background-color: #f0f3f4;
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    top: 21%;
+}
+
+.container .header {
+    font-size: 4rem;
+    color: blue;
+    text-align: center;
+}
+
+.container .container--input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 2rem;
+    width: 700px;
+    max-width: 100%;
+}
+
+.container .container--input #username,
+.container .container--input #password {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container .container--input #login {
+    background-color: #090977;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.container #or {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    overflow: hidden;
+}
+
+.container #or .or {
+    width: 338px;
+}
+
+.container input + input {
+    margin-top: 1.5rem;
+}
+
+.container #create-new-account {
+    font-size: 1.8rem;
+    background-color: #03a10f;
+    color: white;
+    padding: 1rem 0.8rem;
+    cursor: pointer;
+    padding: 1.5rem 3.2rem;
+    border: none;
+}
+
+.container #change-password {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    color: #928383;
+    cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

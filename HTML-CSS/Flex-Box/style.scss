@@ -1,0 +1,229 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.container-nav {
+    display: flex;
+    font-size: 1.6rem;
+    width: 100vw;
+    min-height: 4.6rem;
+    background-color: #ccc;
+    color: black;
+    justify-content: space-between;
+
+    .list-nav {
+        display: flex;
+        margin: 1rem 1.6rem;
+
+        .list-item {
+            margin: 0.5rem 1.2rem 0.5rem 0;
+            font-size: 2rem;
+        }
+    }
+}
+
+.container-form {
+    font-size: 2rem;
+    background-color: rgb(107, 231, 107);
+    height: 21rem;
+    padding: 8rem 16rem 8rem 8rem;
+
+    .form {
+        background-color: white;
+        width: 100%;
+        height: 8em;
+        padding: 2rem 4rem;
+
+        .container-input {
+            display: flex;
+            position: relative;
+            top: 27%;
+
+            .form-label,
+            .form-input {
+                margin-top: 1rem;
+            }
+
+            .form-label {
+                min-width: 9rem;
+            }
+
+            .form-input {
+                flex: 1;
+            }
+        }
+    }
+}
+
+.container-description-feature {
+    display: flex;
+    font-size: 2rem;
+    background-color: #c6c4c6;
+    width: 100%;
+    justify-content: space-around;
+
+    .description-feature {
+        flex-basis: 27.5%;
+        margin: 6rem 0;
+    }
+
+    .feature1,
+    .feature2,
+    .feature3 {
+        padding: 1.6rem;
+    }
+
+    .feature1 {
+        background-color: #b9dfdc;
+    }
+
+    .feature2 {
+        background-color: #d3b6af;
+    }
+
+    .feature3 {
+        background-color: #d4afd6;
+    }
+
+    @media (max-width: 56.25em) {
+        flex-direction: column;
+
+        .description-feature {
+            margin: 1.5rem 0;
+        }
+    }
+}
+
+.container-percent {
+    display: flex;
+    font-size: 2rem;
+    color: white;
+    justify-content: space-around;
+    height: 50rem;
+    margin-top: 15rem;
+
+    .percent {
+        height: var(--percent);
+        align-self: flex-end;
+        padding: 3rem 2rem;
+        background-color: #ef471f;
+        animation: progress ease-in 1s;
+    }
+
+    @keyframes progress {
+        from {
+            opacity: 0;
+            height: calc((var(--percent)) - 96%);
+        }
+        to {
+            opacity: 1;
+            height: var(--percent);
+        }
+    }
+}
+
+.container-center {
+    background-color: #c6c4c6;
+    font-size: 10rem;
+    padding: 5rem 25rem;
+
+    .text-center {
+        background-color: #b8dfbc;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (max-width: 56.25em) {
+        font-size: 5rem;
+        padding: 2.5rem 12.5rem;
+
+        .text-center {
+            background-color: #c6c4c6;
+        }
+    }
+}
+
+.container-content {
+    font-size: 2rem;
+    display: flex;
+
+    .col-items {
+        flex: 1;
+    }
+
+    .slideBar2 {
+        flex: 3;
+        margin: 0 3.2rem;
+        justify-content: space;
+    }
+}
+
+.container-number {
+    font-size: 7rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 6rem;
+    font-weight: bold;
+    flex-wrap: wrap;
+
+    .number {
+        display: flex;
+        justify-content: center;
+        color: white;
+        background-color: #ef471f;
+        width: 15rem;
+        padding: 3rem;
+        margin: 3rem 0;
+    }
+}
+
+.container-row-col {
+    font-size: 2rem;
+    display: flex;
+    background-color: #c6c4c6;
+    padding: 6rem 10rem 8rem;
+
+    .col-pd {
+        padding: 1.5rem;
+    }
+
+    .col-1 {
+        background-color: #fff;
+        flex: 1;
+    }
+
+    .col-2 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        .row-1 {
+            flex: 1;
+            background-color: #deb7ce;
+            width: 100%;
+        }
+
+        .row-2 {
+            flex: 1;
+            background-color: #afc0d5;
+            width: 100%;
+        }
+    }
+}

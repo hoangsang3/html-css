@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+        />
+        <title>Toast Message</title>
+    </head>
+    <body>
+        <div class="main">
+            <button class="btn btn--success" id="btn--success">success!</button>
+
+            <button class="btn btn--info" id="btn--info">info</button>
+
+            <button class="btn btn--warning" id="btn--warning">warning</button>
+
+            <button class="btn btn--danger" id="btn--danger">danger</button>
+        </div>
+
+        <div class="container" id="container-animation">
+            <div
+                class="toast-message toast-message--success"
+                id="toast-message--success"
+            >
+                <i class="fas fa-check-circle"></i>
+                <div class="toast-message__body">
+                    <h3 class="toast-message__title">Success!</h3>
+                    <span class="toast-message__content"
+                        >Anyone with access can view your invited
+                        visitors.</span
+                    >
+                </div>
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div
+                class="toast-message toast-message--info"
+                id="toast-message--info"
+            >
+                <i class="fas fa-info-circle"></i>
+                <div class="toast-message__body">
+                    <h3 class="toast-message__title">Info</h3>
+                    <span class="toast-message__content"
+                        >Anyone with access can view your invited
+                        visitors.</span
+                    >
+                </div>
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div
+                class="toast-message toast-message--warning"
+                id="toast-message--warning"
+            >
+                <i class="fas fa-exclamation-circle"></i>
+                <div class="toast-message__body">
+                    <h3 class="toast-message__title">Warning</h3>
+                    <span class="toast-message__content"
+                        >Anyone with access can view your invited
+                        visitors.</span
+                    >
+                </div>
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div
+                class="toast-message toast-message--danger"
+                id="toast-message--danger"
+            >
+                <i class="fas fa-exclamation-triangle"></i>
+                <div class="toast-message__body">
+                    <h3 class="toast-message__title">Danger</h3>
+                    <span class="toast-message__content"
+                        >Anyone with access can view your invited
+                        visitors.</span
+                    >
+                </div>
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </body>
+    <script src="./srcipt.js"></script>
+</html>

@@ -1,0 +1,153 @@
+:root {
+    --header-height: 46px;
+
+    --button-color: #eb4228;
+    --white-color: #fff;
+    --black-color: #000;
+    --black-color-hover05: rgba(0, 0, 0, 0.5);
+}
+
+* {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.mgl1rem {
+    margin-left: 1rem;
+}
+
+.mgl2rem {
+    margin-left: 2rem;
+}
+
+.mgl5rem {
+    margin-left: 5rem;
+}
+
+.mgr {
+    margin-right: 2rem;
+}
+
+.mgr5rem {
+    margin-right: 5rem;
+}
+
+.mr-1rem {
+    margin-right: -1rem;
+}
+
+.mgb0 {
+    margin-bottom: 0 !important;
+}
+
+.pdr1rem {
+    padding-right: 1rem;
+}
+
+.plr185rem {
+    padding: 0.8rem 1.85rem !important;
+}
+
+.hover:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.hover-2:hover .intro,
+.hover-2:hover .opacity {
+    opacity: 0.7;
+}
+
+.cursor {
+    cursor: pointer !important;
+}
+
+.user-select-none {
+    user-select: none;
+    cursor: default;
+}
+
+.fz16px {
+    font-size: 1.6rem;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--black-color-hover05);
+    width: 100%;
+    height: 100%;
+    animation: Zoom linear 0.2s;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    padding: 1.7rem 2.7rem;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: var(--button-color);
+    color: var(--white-color);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 0.7rem;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+
+.hr-col {
+    width: 2px;
+    height: 25px;
+    background-color: var(--white-color);
+    display: flex;
+    margin: auto 1rem;
+}
+
+.color {
+    background-color: var(--black-color) !important;
+}
+
+.orange {
+    color: var(--button-color);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Zoom {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ZoomOut {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

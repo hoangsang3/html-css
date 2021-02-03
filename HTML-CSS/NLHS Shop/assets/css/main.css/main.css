@@ -1,0 +1,555 @@
+.header {
+  font-size: 1.6rem;
+  position: fixed;
+  max-height: var(--header-height);
+  width: 100%;
+}
+
+.header .header__nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 100%;
+  max-height: var(--header-height);
+  background-color: var(--black-color);
+}
+
+.header .header__nav-bar .nav-bar__list-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header__nav-bar .nav-bar__list-items .nav-bar__item {
+  line-height: var(--header-height);
+}
+
+.header .header__nav-bar .nav-bar__list-items .nav-bar__item .nav-bar__link-item {
+  color: var(--white-color);
+}
+
+.header .header__nav-bar .nav-bar__list-items .nav-bar__item .fa-facebook,
+.header .header__nav-bar .nav-bar__list-items .nav-bar__item .fa-instagram {
+  font-size: 2.5rem;
+  line-height: var(--header-height);
+  margin-left: 1.5rem;
+}
+
+.header .header-search {
+  background-color: rgba(51, 62, 72, 0.7);
+  height: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header .header-search .header__logo {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  cursor: pointer;
+}
+
+.header .header-search #header__search {
+  outline: none;
+  padding: 1.5rem 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  min-width: 50%;
+  -webkit-box-shadow: 0.5rem 1rem 2rem var(--black-color);
+          box-shadow: 0.5rem 1rem 2rem var(--black-color);
+}
+
+.header .header-search .cart-i {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header .header-search .cart-i .cart::before {
+  color: #8bd12a;
+  font-size: 4rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header__qr-code {
+  display: none;
+  position: absolute;
+  top: var(--header-height);
+  max-width: 100%;
+  min-height: 100%;
+  background-color: var(--white-color);
+  -webkit-box-shadow: 0.6rem 0.3rem 1rem var(--black-color);
+          box-shadow: 0.6rem 0.3rem 1rem var(--black-color);
+  border-radius: 0.4rem;
+  -webkit-animation: fadeIn linear 0.4s forwards;
+          animation: fadeIn linear 0.4s forwards;
+  z-index: 1;
+  will-change: opacity, transform;
+}
+
+.header__qr-code .qr-code__github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 22.2rem;
+  height: 100%;
+}
+
+.header__qr-code .download-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__qr-code .download-link .google-play {
+  width: 14rem;
+}
+
+.header__qr-code .download-link .app-store {
+  position: relative;
+  width: 10rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.notification {
+  display: none;
+  position: absolute;
+  min-height: 100%;
+  border: 1px solid var(--black-color-hover05);
+  z-index: 10;
+  width: 401px;
+  max-width: 100%;
+  height: 60rem;
+  -webkit-box-shadow: 0.5rem 1rem 2rem var(--black-color);
+          box-shadow: 0.5rem 1rem 2rem var(--black-color);
+  cursor: pointer;
+  overflow-y: scroll;
+  -webkit-animation: ZoomOut linear 0.2s forwards;
+          animation: ZoomOut linear 0.2s forwards;
+  -webkit-transform-origin: calc(100% - 97.9%) top;
+          transform-origin: calc(100% - 97.9%) top;
+  will-change: opacity, transform;
+  background-color: var(--white-color);
+}
+
+.notification .notification__header,
+.notification .notification__footer {
+  background-color: var(--white-color);
+  color: var(--black-color-hover05);
+}
+
+.notification .notification__header {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  width: 381.7px;
+  cursor: text;
+}
+
+.notification .notification__footer {
+  border-top: 1px dotted rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-weight: 500;
+}
+
+.notification__main {
+  background-color: var(--white-color);
+}
+
+.notification__main .notification__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%;
+  padding: 1.6rem 0;
+  background-color: rgba(111, 119, 126, 0.2);
+}
+
+.notification__main .notification__link .notification__link--img {
+  width: 20%;
+  height: 15%;
+  margin: 1rem;
+}
+
+.notification__main .notification__link .notification__link--info {
+  margin-right: 4rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.notification__main .notification__link .notification__link--info .info__name,
+.notification__main .notification__link .notification__link--info .info__description {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.3;
+}
+
+.notification__main .notification__link .notification__link--info .info__name {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+}
+
+.notification__main .notification__link .notification__link--info .info__description {
+  font-size: 1.4rem;
+  margin-top: 0.6rem;
+}
+
+.notification__main .notification__link:first-child {
+  padding-top: 0.8rem;
+}
+
+.notification__main .notification__link:last-child {
+  padding-bottom: 2.1rem;
+}
+
+.notification__main .notification__link:hover {
+  background-color: rgba(111, 119, 126, 0.4);
+}
+
+.notification__main .notification__link:hover .notification__link--info .info__name,
+.notification__main .notification__link:hover .notification__link--info .info__description {
+  color: var(--black-color);
+}
+
+.nav-bar__item--hover-display:hover .header__qr-code,
+.hover-2:hover .notification {
+  display: block;
+}
+
+.hover-text-p {
+  margin: 0;
+}
+
+.nav-bar__item--hover-display:hover .hover-text .hover-text-p {
+  opacity: 0.7;
+}
+
+.nav-bar__item--hover-display:hover .header__qr-code {
+  opacity: 1;
+}
+
+.form-login,
+.form-sign-up {
+  z-index: 2000;
+  padding: 3.5rem 3rem 0;
+  -webkit-box-shadow: 0.5rem 1rem 2rem var(--black-color);
+          box-shadow: 0.5rem 1rem 2rem var(--black-color);
+  position: fixed;
+  width: 450px;
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 1.6rem;
+  top: 15%;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: none;
+  background-color: var(--white-color);
+  border-radius: 1rem;
+  -webkit-animation: ZoomOut linear 0.2s;
+          animation: ZoomOut linear 0.2s;
+}
+
+.close {
+  font-size: 3rem;
+  position: absolute;
+  top: -1.3rem;
+  right: -1.3rem;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  color: var(--black-color);
+  cursor: pointer;
+}
+
+.close:hover,
+.close:active {
+  color: var(--black-color-hover05);
+}
+
+.footer__facebook--color {
+  background-color: #0a7cea;
+}
+
+.footer__github--color {
+  background-color: var(--black-color);
+}
+
+.footer__google--color {
+  background-color: #575857;
+}
+
+.google-png {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+.google {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.border-rectangle {
+  max-width: 100%;
+  height: 100%;
+  padding: 0.8rem 2.3rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.border-rectangle:hover {
+  opacity: 0.7;
+}
+
+.form-login .form-login__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-login .form-login__heading .login,
+.form-login .form-login__heading .sign-up {
+  font-weight: 600;
+}
+
+.form-login .form-login__heading .login {
+  font-size: 3rem;
+  margin-top: -1rem;
+  color: var(--button-color);
+}
+
+.form-login .form-login__heading .sign-up {
+  font-size: 1.8rem;
+}
+
+.form-login .form-login__heading .sign-up:hover {
+  opacity: 0.7;
+}
+
+.form-login .input-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 5rem;
+}
+
+.form-login .input-info .login-input {
+  padding: 1.5rem 0 1.5rem 2rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+}
+
+.form-login .input-info .login-input::-webkit-input-placeholder {
+  color: rgba(111, 119, 126, 0.7);
+}
+
+.form-login .input-info .login-input:-ms-input-placeholder {
+  color: rgba(111, 119, 126, 0.7);
+}
+
+.form-login .input-info .login-input::-ms-input-placeholder {
+  color: rgba(111, 119, 126, 0.7);
+}
+
+.form-login .input-info .login-input::placeholder {
+  color: rgba(111, 119, 126, 0.7);
+}
+
+.form-login .input-info .login-input:focus {
+  border: 1px solid var(--button-color);
+}
+
+.form-login .input-info .login-input + .login-input {
+  margin-top: 1.8rem;
+}
+
+.form-login .input-info .login-input::before,
+.form-login .input-info .login-input:focus {
+  outline: none;
+}
+
+.form-login .input-help {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.form-login .input-help .input-help___link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.form-login .input-help .change-password {
+  color: var(--button-color);
+}
+
+.form-login .input-help .change-password:hover,
+.form-login .input-help .change-help:hover {
+  opacity: 0.7;
+}
+
+.form-login .or {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-login .or .middle {
+  margin: 0 1.6rem;
+}
+
+.form-login .or .left,
+.form-login .or .right {
+  height: 1px;
+  width: 100%;
+  background-color: var(--button-color);
+}
+
+.form-login .form-login__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 2.5rem;
+}
+
+.form-sign-up .form-sign-up__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-sign-up .form-sign-up__heading .login,
+.form-sign-up .form-sign-up__heading .sign-up {
+  font-weight: 600;
+}
+
+.form-sign-up .form-sign-up__heading .sign-up {
+  font-size: 3rem;
+  margin-top: -1rem;
+  color: var(--button-color);
+}
+
+.form-sign-up .form-sign-up__heading .login {
+  font-size: 1.8rem;
+}
+
+.form-sign-up .form-sign-up__heading .login:hover {
+  opacity: 0.7;
+}
+
+.form-sign-up .input-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 5rem;
+}
+
+.form-sign-up .input-info .sign-up-input {
+  padding: 1.5rem 0 1.5rem 2rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+}
+
+.form-sign-up .input-info .sign-up-input::-webkit-input-placeholder {
+  color: rgba(111, 119, 126, 0.7);
+}
+
+.form-sign-up .input-info .sign-up-input:-ms-input-placeholder {
+  color: rgba(111, 119, 126, 0.7);
+}
+
+.form-sign-up .input-info .sign-up-input::-ms-input-placeholder {
+  color: rgba(111, 119, 126, 0.7);
+}
+
+.form-sign-up .input-info .sign-up-input::placeholder {
+  color: rgba(111, 119, 126, 0.7);
+}
+
+.form-sign-up .input-info .sign-up-input:focus {
+  border: 1px solid var(--button-color);
+}
+
+.form-sign-up .input-info .sign-up-input + .sign-up-input {
+  margin-top: 1.8rem;
+}
+
+.form-sign-up .input-info .sign-up-input::before,
+.form-sign-up .input-info .sign-up-input:focus {
+  outline: none;
+}
+
+.form-sign-up .policy {
+  margin-top: 2.5rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.form-sign-up .policy .policy__text:hover {
+  opacity: 0.7;
+}
+
+.form-sign-up .form-sign-up__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.4rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 2.5rem;
+}
+/*# sourceMappingURL=main.css.map */

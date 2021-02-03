@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            summary {
+                font-size: 5rem;
+                color: green;
+            }
+
+            summary:focus {
+                outline: none;
+            }
+            a {
+                text-decoration: none;
+                font-size: 3rem;
+                color: rgb(134, 98, 98);
+            }
+        </style>
+        <title>Document</title>
+    </head>
+    <body>
+        <a href="../1/index.html#icon-dynamic">change page</a>
+
+        <iframe
+            src="../1/index.html"
+            frameborder="0"
+            width="1000"
+            height="500"
+            style="border: none; background-color: red"
+        ></iframe>
+
+        <iframe
+            width="1107"
+            height="623"
+            src="https://www.youtube.com/embed/R3vqhJ72lcE"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            name="hoan-hao-video"
+        ></iframe>
+        <p>
+            <a href="https://fullstack.edu.vn/learning/html-css/html-css-mini-01-about" target="hoan-hao-video">
+                Change video
+            </a>
+        </p>
+
+        <mark onclick="Time()" id="time"></mark>
+
+        <details>
+            <summary>Link</summary>
+            <figure>
+                <a href="https://www.w3schools.com/html/html_media.asp"> W3Schools </a>
+            </figure>
+
+            <figure>
+                <a href="https://fullstack.edu.vn/learning/html-css/html-css-bem-related-block"> F8 </a>
+            </figure>
+        </details>
+
+        <form action="">
+            <input type="text" list="nb" pattern />
+            <datalist id="nb">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+            </datalist>
+        </form>
+
+        <form action="/action_page.php">
+            <input type="text" readonly />
+        </form>
+
+        <div class="container">
+            <h1 class="header">Facebook</h1>
+
+            <form class="container--input">
+                <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Mobile number or email address"
+                    required
+                />
+                <input type="password" name="password" id="password" placeholder="Password" required />
+                <input type="submit" value="Log in" id="login" />
+            </form>
+
+            <div id="or">
+                <hr class="or" />
+                or
+                <hr class="or" />
+            </div>
+
+            <input type="submit" value="Create New Account" id="create-new-account" />
+            <span id="change-password">Forgotten password?</span>
+        </div>
+    </body>
+
+    <script>
+        setInterval(function Time() {
+            document.getElementById("time").innerHTML = Date();
+        }, 1000);
+    </script>
+</html>
